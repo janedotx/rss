@@ -12,6 +12,10 @@ class ArticlesController < ApplicationController
     rss = `curl -A "Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_3_3 like Mac OS X; en-us) AppleWebKit/533.17.9 (KHTML, like Gecko) Version/5.0.2 Mobile/8J2 Safari/6533.18.5"  https://www.reddit.com/.rss`
     begin
       feed = RSS::Parser.parse(rss)
+      # This is quick and simple, but the disadvantage is that if you've starred an article, it won't show up as starred in the
+      # UI. Had I more time, what I'd do is have a second instance variable, something like @starred, that would be articles
+      # that had recently been saved to the database, and then in the view, if a feed item was in @starred and @articles,
+      # check the box in the view.
       @articles = feed.items
     rescue Exception => e
       # If I had time I would handle various exceptions, e.g. coming across a Unicode character when the parser was expecting
