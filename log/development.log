@@ -693,3 +693,249 @@ Migrating to AddUrisToArticles (20160605080822)
  WHERE type = 'table' AND NOT name = 'sqlite_sequence'
 [0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:29:25) [GET]
+Rendering articles/index
+Completed in 1284ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:29:47) [GET]
+  Parameters: {"starred"=>{"We got new neighbors. They have dogs"=>"https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/", "Being bored on Reddit is basically saying that you can't even be entertained by the combined efforts of a billion people"=>"https://www.reddit.com/r/Showerthoughts/comments/4mldso/being_bored_on_reddit_is_basically_saying_that/"}}
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/', NULL, '2016-06-05 09:29:47', '2016-06-05 09:29:47', 'We got new neighbors. They have dogs')[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/Showerthoughts/comments/4mldso/being_bored_on_reddit_is_basically_saying_that/', NULL, '2016-06-05 09:29:47', '2016-06-05 09:29:47', 'Being bored on Reddit is basically saying that you can''t even be entertained by the combined efforts of a billion people')[0m
+Rendering articles/starred
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/articles/starred.html.erb:
+2: Your favorite articles.
+3: <br/>
+4: <br/>
+5: <% @articles.each do |article| %>
+6: <link href="<%= article.uri -%>"> <%= article.headline -%></link>
+7:   </br>
+8:   </br>
+
+    app/views/articles/starred.html.erb:5
+    app/controllers/articles_controller.rb:26:in `star'
+    <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (14.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:31:42) [GET]
+  Parameters: {"starred"=>{"We got new neighbors. They have dogs"=>"https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/", "Being bored on Reddit is basically saying that you can't even be entertained by the combined efforts of a billion people"=>"https://www.reddit.com/r/Showerthoughts/comments/4mldso/being_bored_on_reddit_is_basically_saying_that/"}}
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/', NULL, '2016-06-05 09:31:42', '2016-06-05 09:31:42', 'We got new neighbors. They have dogs')[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/Showerthoughts/comments/4mldso/being_bored_on_reddit_is_basically_saying_that/', NULL, '2016-06-05 09:31:42', '2016-06-05 09:31:42', 'Being bored on Reddit is basically saying that you can''t even be entertained by the combined efforts of a billion people')[0m
+Rendering articles/starred
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/articles/starred.html.erb:
+2: Your favorite articles.
+3: <br/>
+4: <br/>
+5: <% @articles.each do |article| %>
+6: <link href="<%= article.uri -%>"> <%= article.headline -%></link>
+7:   </br>
+8:   </br>
+
+    app/views/articles/starred.html.erb:5
+    app/controllers/articles_controller.rb:26:in `star'
+    <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (12.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:32:04) [GET]
+  [4;36;1mArticle Load (0.9ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 11ms (View: 4, DB: 1) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:32:09) [GET]
+Rendering articles/index
+Completed in 970ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:32:11) [GET]
+Rendering articles/index
+Completed in 788ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:32:17) [GET]
+  Parameters: {"starred"=>{"Wife tried a baby bell for the first time. She's not a fan."=>"https://www.reddit.com/r/funny/comments/4mlt63/wife_tried_a_baby_bell_for_the_first_time_shes/"}}
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/funny/comments/4mlt63/wife_tried_a_baby_bell_for_the_first_time_shes/', NULL, '2016-06-05 09:32:17', '2016-06-05 09:32:17', 'Wife tried a baby bell for the first time. She''s not a fan.')[0m
+Rendering articles/starred
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #5 of app/views/articles/starred.html.erb:
+2: Your favorite articles.
+3: <br/>
+4: <br/>
+5: <% @articles.each do |article| %>
+6: <link href="<%= article.uri -%>"> <%= article.headline -%></link>
+7:   </br>
+8:   </br>
+
+    app/views/articles/starred.html.erb:5
+    app/controllers/articles_controller.rb:26:in `star'
+    <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (13.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:34:03) [GET]
+Rendering articles/index
+Completed in 1356ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:34:14) [GET]
+  Parameters: {"starred"=>{"Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office"=>"https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/", "Bird throwing what it thinks is a shellfish on the ground to open it"=>"https://www.reddit.com/r/gifs/comments/4mkb9v/bird_throwing_what_it_thinks_is_a_shellfish_on/"}}
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/', NULL, '2016-06-05 09:34:14', '2016-06-05 09:34:14', 'Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office')[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/gifs/comments/4mkb9v/bird_throwing_what_it_thinks_is_a_shellfish_on/', NULL, '2016-06-05 09:34:14', '2016-06-05 09:34:14', 'Bird throwing what it thinks is a shellfish on the ground to open it')[0m
+  [4;36;1mArticle Load (1.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 24ms (View: 6, DB: 2) | 200 OK [http://localhost/articles/star?starred%5BPope+Francis+reveals+new+church+law+to+deal+with+paedophile+priests%3A+Catholic+bishops+who+fail+to+sack+paedophile+priests+can+be+removed+from+office%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2F4mla2z%2Fpope_francis_reveals_new_church_law_to_deal_with%2F&starred%5BBird+throwing+what+it+thinks+is+a+shellfish+on+the+ground+to+open+it%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2F4mkb9v%2Fbird_throwing_what_it_thinks_is_a_shellfish_on%2F]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:36:01) [GET]
+  Parameters: {"starred"=>{"Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office"=>"https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/", "Bird throwing what it thinks is a shellfish on the ground to open it"=>"https://www.reddit.com/r/gifs/comments/4mkb9v/bird_throwing_what_it_thinks_is_a_shellfish_on/"}}
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/', NULL, '2016-06-05 09:36:01', '2016-06-05 09:36:01', 'Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/gifs/comments/4mkb9v/bird_throwing_what_it_thinks_is_a_shellfish_on/', NULL, '2016-06-05 09:36:01', '2016-06-05 09:36:01', 'Bird throwing what it thinks is a shellfish on the ground to open it')[0m
+  [4;35;1mArticle Load (0.9ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 12ms (View: 4, DB: 1) | 200 OK [http://localhost/articles/star?starred%5BPope+Francis+reveals+new+church+law+to+deal+with+paedophile+priests%3A+Catholic+bishops+who+fail+to+sack+paedophile+priests+can+be+removed+from+office%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2F4mla2z%2Fpope_francis_reveals_new_church_law_to_deal_with%2F&starred%5BBird+throwing+what+it+thinks+is+a+shellfish+on+the+ground+to+open+it%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2F4mkb9v%2Fbird_throwing_what_it_thinks_is_a_shellfish_on%2F]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:36:03) [GET]
+  Parameters: {"starred"=>{"Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office"=>"https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/", "Bird throwing what it thinks is a shellfish on the ground to open it"=>"https://www.reddit.com/r/gifs/comments/4mkb9v/bird_throwing_what_it_thinks_is_a_shellfish_on/"}}
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/', NULL, '2016-06-05 09:36:03', '2016-06-05 09:36:03', 'Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office')[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/gifs/comments/4mkb9v/bird_throwing_what_it_thinks_is_a_shellfish_on/', NULL, '2016-06-05 09:36:03', '2016-06-05 09:36:03', 'Bird throwing what it thinks is a shellfish on the ground to open it')[0m
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 11ms (View: 1, DB: 2) | 200 OK [http://localhost/articles/star?starred%5BPope+Francis+reveals+new+church+law+to+deal+with+paedophile+priests%3A+Catholic+bishops+who+fail+to+sack+paedophile+priests+can+be+removed+from+office%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fworldnews%2Fcomments%2F4mla2z%2Fpope_francis_reveals_new_church_law_to_deal_with%2F&starred%5BBird+throwing+what+it+thinks+is+a+shellfish+on+the+ground+to+open+it%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fgifs%2Fcomments%2F4mkb9v%2Fbird_throwing_what_it_thinks_is_a_shellfish_on%2F]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:38:20) [GET]
+  [4;36;1mArticle Load (1.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 51ms (View: 47, DB: 1) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:38:22) [GET]
+  [4;35;1mArticle Load (1.2ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:41:38) [GET]
+  [4;36;1mArticle Load (1.2ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/articles/starred]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602072410)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" text, "starred" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160602072410')[0m
+Migrating to AddUrisToArticles (20160605080822)
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "articles" ADD "uri" text DEFAULT ''[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160605080822')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:44:49) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:49:25) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:49:29) [GET]
+Rendering articles/index
+Completed in 1263ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:49:36) [GET]
+  Parameters: {"starred"=>{"Man hurt by SWAT team as he tried to cash check can seek new $3.3M award from Bank of America"=>"https://www.reddit.com/r/news/comments/4mivlh/man_hurt_by_swat_team_as_he_tried_to_cash_check/"}}
+  [4;36;1mArticle Create (0.6ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('Man hurt by SWAT team as he tried to cash check can seek new $3.3M award from Bank of America', NULL, '2016-06-05 09:49:36', '2016-06-05 09:49:36', 'https://www.reddit.com/r/news/comments/4mivlh/man_hurt_by_swat_team_as_he_tried_to_cash_check/')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 9ms (View: 1, DB: 1) | 200 OK [http://localhost/articles/star?starred%5BMan+hurt+by+SWAT+team+as+he+tried+to+cash+check+can+seek+new+%243.3M+award+from+Bank+of+America%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fnews%2Fcomments%2F4mivlh%2Fman_hurt_by_swat_team_as_he_tried_to_cash_check%2F]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:55:37) [GET]
+  [4;36;1mArticle Load (4.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 21ms (View: 7, DB: 4) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:55:39) [GET]
+Rendering articles/index
+Completed in 957ms (View: 1, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:56:06) [GET]
+  Parameters: {"starred"=>{"We got new neighbors. They have dogs"=>"https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/"}}
+  [4;36;1mArticle Create (0.7ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('We got new neighbors. They have dogs', NULL, '2016-06-05 09:56:06', '2016-06-05 09:56:06', 'https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/')[0m
+Redirected to http://localhost:3000/articles/starred
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/star?starred%5BWe+got+new+neighbors.+They+have+dogs%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fpics%2Fcomments%2F4mkxx5%2Fwe_got_new_neighbors_they_have_dogs%2F]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:56:06) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/starred]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:56:09) [GET]
+Rendering articles/index
+Completed in 854ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:56:13) [GET]
+  Parameters: {"starred"=>{"ELI5: How do we know what the earths inner consists of, when the deepest we have burrowed is 12 km?"=>"https://www.reddit.com/r/explainlikeimfive/comments/4mjpkm/eli5_how_do_we_know_what_the_earths_inner/"}}
+  [4;36;1mArticle Create (0.5ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('ELI5: How do we know what the earths inner consists of, when the deepest we have burrowed is 12 km?', NULL, '2016-06-05 09:56:13', '2016-06-05 09:56:13', 'https://www.reddit.com/r/explainlikeimfive/comments/4mjpkm/eli5_how_do_we_know_what_the_earths_inner/')[0m
+Redirected to http://localhost:3000/articles/starred
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles/star?starred%5BELI5%3A+How+do+we+know+what+the+earths+inner+consists+of%2C+when+the+deepest+we+have+burrowed+is+12+km%3F%5D=https%3A%2F%2Fwww.reddit.com%2Fr%2Fexplainlikeimfive%2Fcomments%2F4mjpkm%2Feli5_how_do_we_know_what_the_earths_inner%2F]
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:56:13) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 8ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/starred]

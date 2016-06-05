@@ -11,18 +11,18 @@ class ArticlesController < ApplicationController
   end
 
   def starred
-    @articles = Article.find(:all)
+    @articles = Article.find(:all) || []
   end
 
   # There should be protection against storing dupes.
   def star
-    params[:starred].each do |uri, headline|
+    params[:starred].each do |headline, uri|
       a = Article.new
       # Probably should've named this "url" instead.
       a.uri = uri
       a.headline = headline
       a.save
     end
-    render action: 'starred'
+    redirect_to action: 'starred'
   end
 end

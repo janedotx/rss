@@ -1,9 +1,16 @@
 <body>
+<% if @articles.present? %>
+<a href="/"> Back to the RSS feed.</a>
+<br/>
+<br/>
 Your favorite articles.
+<% else %>
+You should go star something! Go to <a href="/"> the beautiful home page</a> and get to work!
+<% end %>
 <br/>
 <br/>
 <% @articles.each do |article| %>
-<link href="<%= article.uri -%>"> <%= article.headline -%></link>
+<a href="<%= article.uri -%>"> <%= article.headline -%></a>
   </br>
   </br>
 <% end %>
