@@ -10,3 +10,4 @@ saving an article in the DB indicates it's starred.)
 one useful and fun feature to implement would be for the reader to refresh itself with new content.
 4. Obviously this needs tests.
 5. This is running on WEBrick right now, so that's why it's slow, sorry.
+6. Oh, also, probably user accounts would be good.
