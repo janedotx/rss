@@ -1,0 +1,14 @@
+<body>
+Scroll down to the bottom to hit "Star these" to save your favorite articles.
+<br/>
+<br/>
+<form action="/articles/star">
+<% @articles.each do |article| %>
+<% title = article.title.content  -%>
+<input type="checkbox" name="starred[<%= title -%>]" value="<%= article.link.href -%>"> <%= title %>
+  </br>
+  </br>
+<% end %>
+<input type="submit" value="Star these">
+</form>
+</body>

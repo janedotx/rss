@@ -1,0 +1,695 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602052324)
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20160602052324')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-01 22:51:51) [GET]
+
+ActionController::RoutingError (No route matches "/index" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-01 22:51:55) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-01 23:06:58) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-01 23:07:12) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-01 23:07:14) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-01 23:07:37) [GET]
+
+NameError (uninitialized constant ApplicationController::Base):
+  app/controllers/articles_controller.rb:4:in `<top (required)>'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (13.0ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:08:28) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:09:21) [GET]
+
+ActionController::RenderError (You called render with invalid options : :text, "hello"):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (11.4ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:10:27) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:10:33) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:10:46) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:11:27) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:11:42) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:11:43) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:14:25) [GET]
+
+RuntimeError (hell):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (12.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:15:52) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-01 23:17:23) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  app/controllers/articles_controller.rb:12:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602052324)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602052324)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602052324)
+Migrating to Createarticles (20160602070744)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20160602070744')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20160602070744')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20160602052324')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (7.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602052324)
+  [4;35;1mSQL (0.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20160602052324')[0m
+Migrating to Createarticles (20160602070744)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160602070744')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20160602070744')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20160602052324')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602052324)
+Migrating to Createarticles (20160602070744)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (6.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602072410)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" text, "starred" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160602072410')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;36;1mArticle Create (1.3ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at") VALUES('foo foo faffodil', 1, '2016-06-02 07:29:26', '2016-06-02 07:29:26')[0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."headline" = 'foo foo faffodil') LIMIT 1[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-04 22:04:42) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-04 22:07:18) [GET]
+
+OpenURI::HTTPError (429 Too Many Requests):
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:346:in `open_http'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:776:in `buffer_open'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:203:in `block in open_loop'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:201:in `catch'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:201:in `open_loop'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:146:in `open_uri'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:678:in `open'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:33:in `open'
+  app/controllers/articles_controller.rb:13:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (12.2ms)
+Rendered rescues/_request_and_response (44.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-04 22:07:23) [GET]
+
+OpenURI::HTTPError (429 Too Many Requests):
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:346:in `open_http'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:776:in `buffer_open'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:203:in `block in open_loop'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:201:in `catch'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:201:in `open_loop'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:146:in `open_uri'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:678:in `open'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:33:in `open'
+  app/controllers/articles_controller.rb:13:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (13.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-04 22:08:09) [GET]
+
+OpenURI::HTTPError (429 Too Many Requests):
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:346:in `open_http'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:776:in `buffer_open'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:203:in `block in open_loop'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:201:in `catch'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:201:in `open_loop'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:146:in `open_uri'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:678:in `open'
+  /Users/jane.huang/.rbenv/versions/1.9.3-p547/lib/ruby/1.9.1/open-uri.rb:33:in `open'
+  app/controllers/articles_controller.rb:13:in `index'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (14.1ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-04 22:36:34) [GET]
+
+ActionView::MissingTemplate (Missing template articles/index.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 00:13:13) [GET]
+Rendering articles/index
+Completed in 1599ms (View: 16, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 00:14:12) [GET]
+Rendering articles/index
+Completed in 747ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 00:18:06) [GET]
+Rendering articles/index
+Completed in 1580ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-05 00:46:56) [GET]
+
+ActionController::RoutingError (No route matches "/articles" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2016-06-05 00:47:12) [GET]
+
+ActionController::RoutingError (No route matches "/articles" with {:method=>:get}):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 00:48:00) [GET]
+Rendering articles/index
+Completed in 1716ms (View: 15, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 00:55:48) [GET]
+Rendering articles/index
+Completed in 1354ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602072410)
+Migrating to AddUrisToArticles (20160605080822)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mALTER TABLE "articles" ADD "uri" text DEFAULT ''[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160605080822')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:21:03) [GET]
+Rendering articles/index
+Completed in 3026ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:21:42) [GET]
+Rendering articles/index
+Completed in 1558ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:21:57) [GET]
+Rendering articles/index
+Completed in 1302ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:22:02) [GET]
+Rendering articles/index
+Completed in 1429ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:25:35) [GET]
+Rendering articles/index
+Completed in 1310ms (View: 4, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 01:29:34) [GET]
+  Parameters: {"starred"=>"We got new neighbors. They have dogs"}
+
+NoMethodError (undefined method `info' for nil:NilClass):
+  app/controllers/articles_controller.rb:18:in `star'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (11.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:36:43) [GET]
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `uri' for #<RSS::Atom::Feed::Title:0x007fc8bcafc940>) on line #8 of app/views/articles/index.html.erb:
+5: <form action="/articles/star">
+6: <% @articles.each do |article| %>
+7: <% title = article.title.content  -%>
+8: <input type="checkbox" name="<%= title -%>" value="<%= article.title.uri -%>"> <%= title %>
+9:   </br>
+10:   </br>
+11: <% end %>
+
+    app/views/articles/index.html.erb:8:in `block in _run_erb_app47views47articles47index46html46erb'
+    app/views/articles/index.html.erb:6:in `each'
+    app/views/articles/index.html.erb:6
+    <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (15.4ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:38:33) [GET]
+Rendering articles/index
+Completed in 885ms (View: 52, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 01:44:24) [GET]
+  Parameters: {"We got new neighbors. They have dogs"=>"https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/"}
+
+ActionView::MissingTemplate (Missing template articles/star.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 01:45:58) [GET]
+Rendering articles/index
+Completed in 1591ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 01:46:25) [GET]
+  Parameters: {"Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office"=>"https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/", "We got new neighbors. They have dogs"=>"https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/"}
+
+ActionView::MissingTemplate (Missing template articles/star.erb in view path /Users/jane.huang/Dropbox/code/snapdocs/rss/app/views):
+  <internal:prelude>:10:in `synchronize'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:07:16) [GET]
+  Parameters: {"Pope Francis reveals new church law to deal with paedophile priests: Catholic bishops who fail to sack paedophile priests can be removed from office"=>"https://www.reddit.com/r/worldnews/comments/4mla2z/pope_francis_reveals_new_church_law_to_deal_with/", "We got new neighbors. They have dogs"=>"https://www.reddit.com/r/pics/comments/4mkxx5/we_got_new_neighbors_they_have_dogs/"}
+
+NoMethodError (undefined method `title=' for #<Article:0x007fe0bc544a30>):
+  app/controllers/articles_controller.rb:22:in `block in star'
+  app/controllers/articles_controller.rb:19:in `each'
+  app/controllers/articles_controller.rb:19:in `star'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (10.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2016-06-05 02:11:28) [GET]
+Rendering articles/index
+Completed in 2279ms (View: 16, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:11:42) [GET]
+  Parameters: {"TIL The Larvae of the Planthopper bug is the first living thing discovered to have evolved mechanical gears. They're located in its legs and enable it to jump at an acceleration of 400Gs in 2ms."=>"https://www.reddit.com/r/todayilearned/comments/4mkv4m/til_the_larvae_of_the_planthopper_bug_is_the/", "There's a small leak in the men's room..."=>"https://www.reddit.com/r/funny/comments/4mks4w/theres_a_small_leak_in_the_mens_room/", "I've been experimenting with velvia slide film for a little while and I just had my jesus christ moment when I got my sunset images back from the lab. Jokulsarlon glacier lagoon, Iceland "=>{"OC"=>{"1500x1186"=>"https://www.reddit.com/r/EarthPorn/comments/4mkifq/ive_been_experimenting_with_velvia_slide_film_for/"}}, "Men at Work (1990). A movie that made being a garbage man in LA look cool."=>"https://www.reddit.com/r/movies/comments/4mk9jl/men_at_work_1990_a_movie_that_made_being_a/"}
+  [4;36;1mArticle Create (0.9ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/todayilearned/comments/4mkv4m/til_the_larvae_of_the_planthopper_bug_is_the/', NULL, '2016-06-05 09:11:42', '2016-06-05 09:11:42', 'TIL The Larvae of the Planthopper bug is the first living thing discovered to have evolved mechanical gears. They''re located in its legs and enable it to jump at an acceleration of 400Gs in 2ms.')[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/funny/comments/4mks4w/theres_a_small_leak_in_the_mens_room/', NULL, '2016-06-05 09:11:42', '2016-06-05 09:11:42', 'There''s a small leak in the men''s room...')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('--- !ruby/hash:HashWithIndifferentAccess
+!binary "T0M=": !ruby/hash:HashWithIndifferentAccess
+ !binary "MTUwMHgxMTg2": !binary |-
+ aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL0VhcnRoUG9ybi9jb21tZW50cy80
+ bWtpZnEvaXZlX2JlZW5fZXhwZXJpbWVudGluZ193aXRoX3ZlbHZpYV9zbGlk
+ ZV9maWxtX2Zvci8=
+', NULL, '2016-06-05 09:11:42', '2016-06-05 09:11:42', 'I''ve been experimenting with velvia slide film for a little while and I just had my jesus christ moment when I got my sunset images back from the lab. Jokulsarlon glacier lagoon, Iceland ')[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/movies/comments/4mk9jl/men_at_work_1990_a_movie_that_made_being_a/', NULL, '2016-06-05 09:11:42', '2016-06-05 09:11:42', 'Men at Work (1990). A movie that made being a garbage man in LA look cool.')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('articles', NULL, '2016-06-05 09:11:42', '2016-06-05 09:11:42', 'controller')[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('star', NULL, '2016-06-05 09:11:42', '2016-06-05 09:11:42', 'action')[0m
+
+NoMethodError (undefined method `action' for #<ArticlesController:0x007fd3f98fff78>):
+  app/controllers/articles_controller.rb:25:in `star'
+  <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (10.6ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#star (for 127.0.0.1 at 2016-06-05 02:13:04) [GET]
+  Parameters: {"TIL The Larvae of the Planthopper bug is the first living thing discovered to have evolved mechanical gears. They're located in its legs and enable it to jump at an acceleration of 400Gs in 2ms."=>"https://www.reddit.com/r/todayilearned/comments/4mkv4m/til_the_larvae_of_the_planthopper_bug_is_the/", "There's a small leak in the men's room..."=>"https://www.reddit.com/r/funny/comments/4mks4w/theres_a_small_leak_in_the_mens_room/", "I've been experimenting with velvia slide film for a little while and I just had my jesus christ moment when I got my sunset images back from the lab. Jokulsarlon glacier lagoon, Iceland "=>{"OC"=>{"1500x1186"=>"https://www.reddit.com/r/EarthPorn/comments/4mkifq/ive_been_experimenting_with_velvia_slide_film_for/"}}, "Men at Work (1990). A movie that made being a garbage man in LA look cool."=>"https://www.reddit.com/r/movies/comments/4mk9jl/men_at_work_1990_a_movie_that_made_being_a/"}
+  [4;36;1mArticle Create (0.4ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/todayilearned/comments/4mkv4m/til_the_larvae_of_the_planthopper_bug_is_the/', NULL, '2016-06-05 09:13:04', '2016-06-05 09:13:04', 'TIL The Larvae of the Planthopper bug is the first living thing discovered to have evolved mechanical gears. They''re located in its legs and enable it to jump at an acceleration of 400Gs in 2ms.')[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/funny/comments/4mks4w/theres_a_small_leak_in_the_mens_room/', NULL, '2016-06-05 09:13:04', '2016-06-05 09:13:04', 'There''s a small leak in the men''s room...')[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('--- !ruby/hash:HashWithIndifferentAccess
+!binary "T0M=": !ruby/hash:HashWithIndifferentAccess
+ !binary "MTUwMHgxMTg2": !binary |-
+ aHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL0VhcnRoUG9ybi9jb21tZW50cy80
+ bWtpZnEvaXZlX2JlZW5fZXhwZXJpbWVudGluZ193aXRoX3ZlbHZpYV9zbGlk
+ ZV9maWxtX2Zvci8=
+', NULL, '2016-06-05 09:13:04', '2016-06-05 09:13:04', 'I''ve been experimenting with velvia slide film for a little while and I just had my jesus christ moment when I got my sunset images back from the lab. Jokulsarlon glacier lagoon, Iceland ')[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('https://www.reddit.com/r/movies/comments/4mk9jl/men_at_work_1990_a_movie_that_made_being_a/', NULL, '2016-06-05 09:13:04', '2016-06-05 09:13:04', 'Men at Work (1990). A movie that made being a garbage man in LA look cool.')[0m
+  [4;36;1mArticle Create (0.2ms)[0m   [0;1mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('articles', NULL, '2016-06-05 09:13:04', '2016-06-05 09:13:04', 'controller')[0m
+  [4;35;1mArticle Create (0.2ms)[0m   [0mINSERT INTO "articles" ("headline", "starred", "created_at", "updated_at", "uri") VALUES('star', NULL, '2016-06-05 09:13:04', '2016-06-05 09:13:04', 'action')[0m
+Rendering articles/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.each) on line #6 of app/views/articles/index.html.erb:
+3: <br/>
+4: <br/>
+5: <form action="/articles/star">
+6: <% @articles.each do |article| %>
+7: <% title = article.title.content  -%>
+8: <input type="checkbox" name="<%= title -%>" value="<%= article.link.href -%>"> <%= title %>
+9:   </br>
+
+    app/views/articles/index.html.erb:6
+    app/controllers/articles_controller.rb:25:in `star'
+    <internal:prelude>:10:in `synchronize'
+
+Rendered rescues/_trace (14.9ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#starred (for 127.0.0.1 at 2016-06-05 02:23:02) [GET]
+  [4;36;1mArticle Load (1.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering articles/starred
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/articles/starred]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602072410)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "headline" text, "starred" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160602072410')[0m
+Migrating to AddUrisToArticles (20160605080822)
+  [4;35;1mSQL (0.2ms)[0m   [0mALTER TABLE "articles" ADD "uri" text DEFAULT ''[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20160605080822')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20160602072410)
+Migrating to AddUrisToArticles (20160605080822)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m

@@ -1,0 +1,10 @@
+<body>
+Your favorite articles.
+<br/>
+<br/>
+<% @articles.each do |article| %>
+<link href="<%= article.uri -%>"> <%= article.headline -%></link>
+  </br>
+  </br>
+<% end %>
+</body>
